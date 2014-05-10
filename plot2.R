@@ -41,7 +41,7 @@ getData.eda_project1 <- function() {
 plot2 <- function() {
   png("plot2.png", width=480, height=480, bg="transparent")
   par(mfrow=c(1,1), mar=c(5,4,3,1))
-  with(twoDays, plot(Time, Global_active_power, type="l", xlab=""))
+  with(twoDays, plot(Time, Global_active_power, type="l", xlab="", ylab="Global Active Power (Kilowatts)"))
   dev.off()
 }
 
